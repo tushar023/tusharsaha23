@@ -1,0 +1,66 @@
+<html>
+
+<head>
+   <title>Query</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="valid.js"></script>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="content1">
+   <center>
+    <h1> Before Query Register Your-self </h1>
+    <h1>-------------------------------------------</h1>
+      <div class="content4">
+      <form action="#" name="myForm" onsubmit="return(validate());">
+         <table border="1">
+
+            <tr>
+               <td align="right">Name</td>
+               <td><input type="text" name="Name" onkeyup="this.value = this.value.toUpperCase();" />
+               </td>
+            </tr>
+
+            <tr>
+               <td align="right">EMail</td>
+               <td><input type="email" name="EMail" /></td>
+            </tr>
+
+            <tr>
+               <td align="right">PIN Code</td>
+               <td><input type="text" name="Zip" onkeypress="return event.charCode >= 48 && event.charCode <= 57" />
+               </td>
+            </tr>
+
+            <tr>
+               <td align="right">Country</td>
+               <td>
+                  <select name="Country">
+                     <option value="-1" selected>[choose Country]</option>
+                     <option value="1">Bangladesh</option>
+                     <option value="2">Bhutan</option>
+                     <option value="3">India</option>
+                     <option value="4">Nepal</option>
+                  </select>
+               </td>
+            </tr>
+
+            <tr>
+               <td align="center" colspan="2"> 
+                  <input type="submit" value="Submit" /> 
+                  <input type="reset" value="Clear">
+            </tr>
+         </table>
+         <h2 id="showError" style="color:red"> </h2>
+      </form>
+   </center>
+   <div class="navbar">
+    <a href="home.html">Home Page</a>
+</div>
+</div>
+</div>
+</div>
+</body>
+
+</html>
